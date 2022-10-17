@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-</head>
-<body>
-    <div class="container mt-4">
-        <form>
-            <label for="inputBox">Things to do : </label>
-            <input type="text" id="inputBox">
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>To do list app</title>
+        <link
+            rel="stylesheet"
+            href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+        />
+    </head>
+    <body>
+        <div class="container mt-4">
+            <form>
+                <label for="inputBox">Things to do : </label>
+                <input type="text" id="inputBox" />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
 
-    <div>
-        <p onclick="remove(this)">hi</p>
-    </div>
-    
-    <script src="/scripts/formSubmit.js"></script>
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
+        <div class="container">
+            <div class="row" id="todoRow">
+<!-- 
+                <div class="column col-4">
+                    <div class="card" style="width: 100%">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card
+                                title and make up the bulk of the card's
+                                content.
+                            </p>
+                            <a href="#" class="btn btn-primary" onclick="removeCard(this)">Remove</a>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+
+        <script src="/scripts/formSubmit.js"></script>
+        <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
 </html>
