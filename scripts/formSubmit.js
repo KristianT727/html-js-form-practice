@@ -14,7 +14,7 @@ const onSubmit = (event) => {
 
     list.innerHTML +=
     `
-    <div class="column col-4 col-sm-6">
+    <div class="column col-lg-4 col-sm-6 mt-4">
                     <div class="card" style="width: 100%">
                         <div class="card-body">
                             <h5 class="card-title">${d.toUTCString()}</h5>
@@ -26,6 +26,7 @@ const onSubmit = (event) => {
                     </div>
                 </div>
     `;
+    document.getElementById("form").reset();
 }
 
 addEventListener("submit", onSubmit);
